@@ -1,4 +1,5 @@
-(function(){angular
+(function(){
+ angular
   .module('app')
   .controller('FactoryController', factoryController);
 
@@ -15,6 +16,8 @@
     ////////////
 
     function codemirrorLoaded(_editor) {
+      console.log(_editor);
+      console.log(output.factory);
       _editor.setValue();
       output.factory = _editor.getValue();
       output.render();

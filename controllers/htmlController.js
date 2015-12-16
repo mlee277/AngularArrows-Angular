@@ -10,7 +10,7 @@
     vm.editorOptions = {
       lineWrapping : true,
       lineNumbers: true,
-      mode: 'xml',
+      mode: 'htmlmixed',
     };
 
     ////////////

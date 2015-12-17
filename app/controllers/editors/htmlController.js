@@ -28,13 +28,14 @@
   <body>
 
   </body>
-</html>  
+</html>
       `);
       output.html = _editor.getValue();
       output.render();
       _editor.on('change', function(inst, changes) {
         output.html = _editor.getValue();
-        lineFactory.lineFunction('.cm-string:contains(myController)');
+        lineFactory.lineFunction('.cm-string:contains(myApp)','.cm-string:contains(myController)');
+        //lineFactory.lineFunction('.cm-string:contains(myController)');
         output.render();
 
         // $http({
@@ -47,7 +48,8 @@
         //   });
 
         setTimeout(function() {
-          lineFactory.lineFunction('.cm-string:contains(myController)');
+          lineFactory.lineFunction('.cm-string:contains(myApp)','.cm-string:contains(myController)');
+        //  lineFactory.lineFunction('.cm-string:contains(myController)');
         },0);
       });
     };

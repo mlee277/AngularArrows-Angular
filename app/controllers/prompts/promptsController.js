@@ -14,6 +14,7 @@
           left: false,
           right: true
         };
+    var counter = 2;
     vm.toggle = toggle;
     vm.getTutorial = getTutorial;
     vm.tutorial = false;
@@ -71,8 +72,10 @@
       if (!vm.tutorial) {
         vm.getTutorial();
         vm.tutorial = true;
+        counter++;
       } else {
         vm.tutorial = false;
+        counter++;
       }
     }
 
@@ -81,8 +84,6 @@
     }
 
     function getTutorial() {
-      //this closes the nzTour if you click the prompt button
-
 
       if(promptFactory.counter === -5) {
           promptFactory.counter = 1;
@@ -110,8 +111,10 @@
         console.log(vm.template.url);
           $mdSidenav('right').toggle();
       }
-    
-        nzTour.stop(tour);
+      if(counter%2 === 0){
+        counter++;
+        nzTour.stop();
+      }
 
 
     }

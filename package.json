@@ -34,5 +34,8 @@
     "mongoose": "^4.2.10",
     "nodemon": "^1.8.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp-ng-annotate": "^1.1.0"
   }
 }

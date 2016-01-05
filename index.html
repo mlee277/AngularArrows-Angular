@@ -2,64 +2,18 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title></title>
     <!-- Stylesheets -->
-          <link rel="stylesheet" type="text/css" media="screen" href="css/nz-tour.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/nz-tour.css">
     <link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="css/angular-material.css">
-    <!-- <link rel="stylesheet" href="css/introjs.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    <!-- intro.js -->
-<!-- <link href='https://cdn.jsdelivr.net/intro.js/2.0.0/introjs.min.css' rel='stylesheet'>
-<script src="https://cdn.jsdelivr.net/intro.js/2.0.0/intro.min.js"></script> -->
-
     <!-- Application Dependencies -->
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALT04VidD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALT0/wC09P9YnQ//WJ0P/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtPT/ALT0/wC09P8AVXkJAAAAAFidD/9YnQ//WJ0P/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC09P8AtPT/ALT0/wC09P8AAAAAN0Tb/zdE2/8AAAAAWJ0P/1idD/9YnQ//WJ0P/wAAAAAAAAAAAAAAAAAAAAAAtPT/ALT0/wAAAAA3RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/8AAAAAWJ0P/1idD/8AAAAAAAAAAAAAAAAAAAAAALT0/wAAAAA3RNv//////zdE2/83RNv/N0Tb/zdE2///////N0Tb/wAAAABYnQ//AAAAAAAAAAAAAAAAALT0/wC09P8AAAAAN0Tb//////83RNv/N0Tb/zdE2/83RNv//////zdE2/8AAAAAWJ0P/1idD/8AAAAAAAAAAAC09P8AtPT/AAAAADdE2/83RNv//////////////////////zdE2/83RNv/AAAAAFidD/9YnQ//AAAAAAAAAAAAtPT/ALT0/zdE2/83RNv/N0Tb//////83RNv/N0Tb//////83RNv/N0Tb/zdE2/9YnQ//WJ0P/wAAAAAAAAAAALT0/wC09P83RNv/N0Tb/zdE2/83RNv///////////83RNv/N0Tb/zdE2/83RNv/WJ0P/1idD/8AAAAAAAAAAAC09P8AtPT/N0Tb/zdE2/83RNv/N0Tb////////////N0Tb/zdE2/83RNv/N0Tb/1idD/9YnQ//AAAAAAAAAAAAtPT/AAAAADdE2603RNv/N0Tb/zdE2/84Rdv//////zdE2/83RNv/N0Tb/zdE2/4AAAAAWJ0P/wAAAAAAAAAAAAAAAPSFQv/0hUL/9IVC/wAAAAA3RNv/N0Tb/zdE2/83RNv/AAAAAPSFQv/0hUL/9IVC/wAAAAAAAAAAAAAAAAAAAAD0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAPw/AADxjwAAwkMAAMgTAADQCwAAkAkAAJAJAACAAQAAgAEAAIABAACgBQAAxCMAAMADAAD4HwAA//8AAA==" rel="icon" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/codemirror/lib/codemirror.js"></script>
-    <script type="text/javascript" src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-    <!-- <script type="text/javascript" src="bower_components/angular/angular.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script> -->
-    <script type="text/javascript" src="bower_components/angular-ui-codemirror/ui-codemirror.js"></script>
-    <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.js"></script>
-<link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
-<link rel="import" href="bower_components/paper-card/paper-card.html">
-
-    <!-- <script type="text/javascript" src="ui-bootstrap-tpls-0.12.0.js"></script> -->
-
-    <!-- nzTour -->
-      <script type="text/javascript" src="bower_components/nz-tour/dist/nz-tour.js"></script>
-
-
-
-    <!-- Developer Scripts -->
-    <script type="text/javascript" src="./app/app.js"></script>
-    <script type="text/javascript" src="./app/factories/promptFactory.js"></script>
-    <script type="text/javascript" src="./app/factories/inputFactory.js"></script>
-    <script type="text/javascript" src="./app/factories/factory.js"></script>
-    <script type="text/javascript" src="./app/factories/lineFactory.js"></script>
-    <script type="text/javascript" src="./app/controllers/prompts/promptsController.js"></script>
-    <script type="text/javascript" src="./app/controllers/prompts/historyController.js"></script>
-    <script type="text/javascript" src="./app/controllers/editors/partialController.js"></script>
-    <script type="text/javascript" src="./app/controllers/editors/appController.js"></script>
-    <script type="text/javascript" src="./app/controllers/editors/controllerController.js"></script>
-    <script type="text/javascript" src="./app/controllers/editors/htmlController.js"></script>
-    <script type="text/javascript" src="./app/controllers/editors/factoryController.js"></script>
-    <script type="text/javascript" src="./app/controllers/output/urlController.js"></script>
-    <script type="text/javascript" src="./app/controllers/sidenav/SideNavCtrl.js"></script>
-    <!-- <script type="text/javascript" src="./app/controllers/sidenav/TESTSideNavCtrl.js"></script> -->
-
-        <!-- Angular Material Dependencies -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
-        <!-- Angular Material Javascript using GitCDN to load directly from `bower-material/master` -->
-  <script src="https://gitcdn.xyz/repo/angular/bower-material/master/angular-material.js"></script>
-  <script type="text/javascript" src="./app/controllers/intro/introController.js"></script>
+    <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
   </head>
   <body>
     <div layout="column" id="mainBody" style="background: transparent" ng-controller="PromptsController as vm" menu-key="vm.toggle()">
@@ -70,25 +24,21 @@
         </center>
       </div>
       <md-progress-linear id="progress" md-mode="determinate" value="{{vm.progress}}" class="md-hue-2" ng-show="vm.shouldStart"></md-progress-linear>
-      <md-progress-linear id="progress" md-mode="determinate" value="{{vm.progress}}" class="md-primary" ng-hide="vm.shouldStart"></md-progress-linear>
       <div ng-controller="HistoryController as historyVM">
         <md-toolbar ng-hide="vm.shouldStart" ng-cloak>
-          <div class="md-toolbar-tools">
+          <div id='headers'class="md-toolbar-tools">
             <ng-md-icon  id="logo" icon="blur_circular" style="fill: white" size="45"></ng-md-icon>
             <h1 style="font-family: 'Lobster'; font-size: 36px;">SnowBubble</h1>
             <span flex></span>
             <h1 style="font-weight: 600; font-size: 24px; font-family: 'Montserrat';">Perfect Angular 1.0</h1>
             <span flex></span>
-  <!-- take this out when you get nzTour working -->
             <div class="" ng-controller="IntroController as introVM" >
-  <md-button ng-click="introVM.start()"   id="start-demo">Guide</md-button>
+              <md-button ng-click="introVM.start()"   id="start-demo">Guide</md-button>
             </div>
-
             <div class="">
               <md-switch ng-model="vm.switchStatus" aria-label="switchStatus" id="toggleLine">
               </md-switch>
               <md-tooltip md-direction="bottom">Toggle Lines</md-tooltip>
-
             </div>
             <div>
               <md-menu>
@@ -108,50 +58,34 @@
               <ng-md-icon icon="format_indent_decrease" style="fill: white" size="24"></ng-md-icon>
               <md-tooltip md-visible="vm.toolTip.showToolTip" md-direction="bottom">Show (esc)</md-tooltip>
             </md-button>
-            <!-- <md-button class="md-fab md-mini" aria-label="Eat cake" id="test" ng-click="vm.getTutorial($event)">
-            <ng-md-icon icon="replay" style="fill: white" size="24"></ng-md-icon>
-          </md-button> -->
+          </div>
+        </md-toolbar>
+        <div>
+          <div id="historySidenav"  ng-include="historyVM.template.historyUrl" ng-hide="vm.shouldStart"></div>
         </div>
-      </md-toolbar>
-      <!-- <div ng-controller="PromptsController as promptsVM" >   onLoad="vm.getTutorial()"-->
+        <div id="promptSidenav"  ng-include="vm.template.url"  ng-hide="vm.shouldStart"></div>
 
+        <canvas id="canvas" width="window.innerWidth" height="window.innerHeight"></canvas>
 
-      <div>
-        <div id="historySidenav"  ng-include="historyVM.template.historyUrl" ng-hide="vm.shouldStart"></div>
-      </div>
-      <div id="promptSidenav"  ng-include="vm.template.url"  ng-hide="vm.shouldStart"></div>
-
-      <!-- </div> -->
-      <canvas id="canvas" width="window.innerWidth" height="window.innerHeight"></canvas>
-      <!-- more material design -->
       <div layout="row" id="mainBody" flex=100 ng-hide="vm.shouldStart" >
         <div layout="column" flex=70>
           <div layout="row" flex>
             <md-card  ng-controller="HtmlController as htmlVM" id="html" class="textEditor md-whiteframe-1dp" flex=50>
-              <!-- <md-toolbar class="md-primary" layout-align="right" ng-cloak> -->
               <h4 class="md-flex" ng-hide="vm.shouldStart" ng-cloak>index.html</h4>
-              <!-- </md-toolbar> -->
               <ui-codemirror ui-codemirror="{ onLoad : htmlVM.codemirrorLoaded }" ui-codemirror-opts="htmlVM.editorOptions"></ui-codemirror>
             </md-card>
             <md-card  ng-controller="AppController as appVM" id="app" class="textEditor md-whiteframe-1dp" flex=50>
-              <!-- <md-toolbar class="md-primary" layout-align="center center" ng-cloak> -->
               <h4 class="md-flex" ng-cloak>app.js</h4>
-              <!-- </md-toolbar> -->
               <ui-codemirror ui-codemirror="{ onLoad : appVM.codemirrorLoaded }" ui-codemirror-opts="appVM.editorOptions"></ui-codemirror>
             </md-card>
           </div>
           <div layout="row" flex>
-
             <md-card  ng-controller="ControllerController as controllerVM" id="controller" class="textEditor md-whiteframe-1dp" flex=50>
-
               <h4 class="md-flex" ng-cloak>controller.js</h4>
-
               <ui-codemirror ui-codemirror="{ onLoad : controllerVM.codemirrorLoaded }" ui-codemirror-opts="controllerVM.editorOptions"></ui-codemirror>
             </md-card>
             <md-card  ng-controller="FactoryController as factoryVM" id="factory" class="textEditor md-whiteframe-1dp" flex=50>
-
               <h4 class="md-flex" ng-cloak>factory.js</h4>
-
               <ui-codemirror ui-codemirror="{ onLoad : factoryVM.codemirrorLoaded }" ui-codemirror-opts="factoryVM.editorOptions"></ui-codemirror>
             </md-card>
           </div>
@@ -168,64 +102,70 @@
         </div>
       </div>
 
-      <!-- <footer layout="column" ng-hide="vm.shouldStart" ng-cloak>
-      <div layout="row" id="topFooter" layout="center center">
-      <div layout="column" layout-align="center center" class="footerItem" flex>
-      hi there
-      <br>
-      sdf
-    </div>
-    <div layout="column" layout-align="center center" class="footerItem" flex>
-    <div layout="row">
-    <a class="md-fab" href="#">
-    <ng-md-icon id="logo" icon="favorite" style="fill: white" size="24"></ng-md-icon>
-  </a>
-  <a class="md-fab" href="#">
-  <ng-md-icon id="logo" icon="github-box" style="fill: white" size="24"></ng-md-icon>
-</a>
-</div>
-</div>
-</div>
-<div layout="row" id="bottFooter" layout-align="center center" flex>
-Powered by SnowBubble ©2015-2016. Code licensed under the MIT License.
-</div>
-</footer> -->
-<footer layout="row" layout-align="center center" ng-hide="vm.shouldStart" ng-cloak>
-  <div layout="column" layout-align="center center" flex>
-    <ng-md-icon id="logo" icon="mood" style="fill: white" size="24">
-      <md-tooltip md-direction="top">Just a smiley</md-tooltip>
-    </ng-md-icon>
-  </div>
-  <div layout="column" layout-align="center center" flex>
-    <h5>Powered by SnowBubble ©2015-2016. Code licensed under the MIT License.</h5>
-  </div>
-  <div layout="column" layout-align="center center" class="footerItem" flex>
-    <div layout="row">
-      <a target="_blank" class="md-fab" href="https://github.com/SnowBubbleJS/AngularArrows-Angular/issues">
-        <ng-md-icon id="logo" icon="error" style="fill: white" size="24"></ng-md-icon>
-        <md-tooltip md-direction="top">Report an Issue</md-tooltip>
-      </a>
-      <a target="_blank" class="md-fab" href="https://github.com/johnpapa/angular-styleguide">
-        <ng-md-icon id="logo" icon="favorite" style="fill: white" size="24"></ng-md-icon>
-        <md-tooltip md-direction="top">John Papa's Style Guide</md-tooltip>
-      </a>
-      <a target="_blank" class="md-fab" href="https://github.com/SnowBubbleJS/AngularArrows-Angular">
-        <md-tooltip md-direction="top">GitHub</md-tooltip>
-        <ng-md-icon id="logo" icon="github-box" style="fill: white" size="24"></ng-md-icon>
-      </a>
+      <footer layout="row" layout-align="center center" ng-hide="vm.shouldStart" ng-cloak>
+        <div layout="column" layout-align="center center" flex>
+          <ng-md-icon id="logo" icon="mood" style="fill: white" size="24">
+            <md-tooltip md-direction="top">Just a smiley</md-tooltip>
+          </ng-md-icon>
+        </div>
+        <div layout="column" layout-align="center center" flex>
+          <h5>Powered by SnowBubble ©2015-2016. Code licensed under the MIT License.</h5>
+        </div>
+        <div layout="column" layout-align="center center" class="footerItem" flex>
+          <div layout="row">
+            <a target="_blank" class="md-fab" href="https://github.com/SnowBubbleJS/AngularArrows-Angular/issues">
+              <ng-md-icon id="logo" icon="error" style="fill: white" size="24"></ng-md-icon>
+              <md-tooltip md-direction="top">Report an Issue</md-tooltip>
+            </a>
+            <a target="_blank" class="md-fab" href="https://github.com/johnpapa/angular-styleguide">
+              <ng-md-icon id="logo" icon="favorite" style="fill: white" size="24"></ng-md-icon>
+              <md-tooltip md-direction="top">John Papa's Style Guide</md-tooltip>
+            </a>
+            <a target="_blank" class="md-fab" href="https://github.com/SnowBubbleJS/AngularArrows-Angular">
+              <md-tooltip md-direction="top">GitHub</md-tooltip>
+              <ng-md-icon id="logo" icon="github-box" style="fill: white" size="24"></ng-md-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script type="text/javascript" src="./dist/scripts/codemirror.min.js"></script>
+  <script type="text/javascript" src="./dist/scripts/modes.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-codemirror/ui-codemirror.min.js"></script>
+  <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 
-</footer>
+  <!-- nzTour -->
+  <script type="text/javascript" src="bower_components/nz-tour/dist/nz-tour.min.js"></script>
 
-      </div>
-  </div>
+  <!-- Developer Scripts -->
+  <script type="text/javascript" src="./dist/app.js"></script>
+  <script type="text/javascript" src="./dist/factories/promptFactory.js"></script>
+  <script type="text/javascript" src="./dist/factories/inputFactory.js"></script>
+  <script type="text/javascript" src="./dist/factories/factory.js"></script>
+  <script type="text/javascript" src="./dist/factories/lineFactory.js"></script>
+  <script type="text/javascript" src="./dist/controllers/prompts/promptsController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/prompts/historyController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/editors/partialController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/editors/appController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/editors/controllerController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/editors/htmlController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/editors/factoryController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/output/urlController.js"></script>
+  <script type="text/javascript" src="./dist/controllers/sidenav/SideNavCtrl.js"></script>
+  <!-- <script type="text/javascript" src="./dist/controllers/sidenav/TESTSideNavCtrl.js"></script> -->
 
-  <!-- For JS -->
+  <!-- Angular Material Dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+  <!-- Angular Material Javascript using GitCDN to load directly from `bower-material/master` -->
+  <script src="https://cdn.gitcdn.xyz/cdn/angular/bower-material/3eb30ab4af6bd7e8f6d24a79584bd738bbe837f2/angular-material.min.js"></script>
+  <!-- <script type="text/javascript" src="./dist/controllers/intro/introController.js"></script> -->
 
-  <!-- <script type="text/javascript" src="./app/controllers/intro/introController.js"></script> -->
-  <script src="./bower_components/codemirror/mode/xml/xml.js"></script>
-  <script src="./bower_components/codemirror/mode/javascript/javascript.js"></script>
+  <script type="text/javascript" src="./dist/controllers/intro/introController.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -234,6 +174,10 @@ Powered by SnowBubble ©2015-2016. Code licensed under the MIT License.
     ga('create', 'UA-71549558-1', 'auto');
     ga('send', 'pageview');
   </script>
-
+  <script type="text/javascript">
+    console.log('%c❄SnowBubble', 'font-size:50px;color:#47e8ff;font-weight:900;text-shadow: 0px 4px 3px rgba(0,0,0,0.4),0px 8px 13px rgba(0,0,0,0.1),0px 18px 23px rgba(0,0,0,0.1);');﻿
+    console.log('%cCreated by:\n\nDaniel De Alday\nwww.github.com/danieldealday\n\nMatt Lee\nwww.github.com/mlee277\n\nBryan Truong\nwww.github.com/bhtruong93', 'font-size:22px;color:#000000;');﻿
+	</script>
+  <link rel="stylesheet" href="css/style.css">
   </body>
 </html>

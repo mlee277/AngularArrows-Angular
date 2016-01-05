@@ -1,3 +1,4 @@
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -131,7 +132,7 @@ md-card {
 }
 
 footer {
-  height: 90px;
+  height: 5%;
   background: #424242;
   color: white;
   position: relative;
@@ -140,7 +141,7 @@ footer {
 
 #header {
   background: rgb(96,125,139);
-  height: 42px;
+  height: 5%;
 }
 
 #canvas {
